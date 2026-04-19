@@ -1,0 +1,5 @@
+node_modules/
+quota_cache.json
+*.log
+.DS_Store
+Thumbs.db

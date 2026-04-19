@@ -1,0 +1,30 @@
+{
+  "name": "claude-code-glm-statusline",
+  "version": "1.0.0",
+  "description": "Claude Code statusline for GLM Coding Plan subscribers — shows model, context usage, and API quota in real-time",
+  "bin": {
+    "glm-statusline-install": "./bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "src/"
+  ],
+  "keywords": [
+    "claude-code",
+    "glm",
+    "zhipu",
+    "statusline",
+    "coding-plan",
+    "bigmodel",
+    "anthropic"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Darkycl/claude-code-glm-statusline.git"
+  },
+  "homepage": "https://github.com/Darkycl/claude-code-glm-statusline#readme"
+}
