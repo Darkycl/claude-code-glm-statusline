@@ -26,6 +26,21 @@ Displays model info, context usage, and 5-hour / 7-day API quotas in real-time �
 - [Node.js](https://nodejs.org/) >= 18
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI
 - Zhipu Coding Plan subscription ([Sign up](https://open.bigmodel.cn/))
+- **Zhipu Usage Query Plugin (glm-plan-usage)** — quota data depends on this plugin
+
+> **Installing the usage query plugin:** Use Zhipu's official Coding Tool Helper for automatic setup:
+> ```bash
+> npx @z_ai/coding-helper
+> ```
+> In the wizard, select **Plugin Marketplace** → install the **glm-plan-usage** plugin.
+>
+> Or install manually:
+> ```bash
+> claude plugin marketplace add zai-org/zai-coding-plugins
+> claude plugin install glm-plan-usage@zai-coding-plugins
+> ```
+>
+> See [Usage Query Plugin docs](https://docs.bigmodel.cn/cn/coding-plan/extension/usage-query-plugin) and [Coding Tool Helper](https://docs.bigmodel.cn/cn/coding-plan/extension/coding-tool-helper) for details.
 
 ## Quick Install
 
