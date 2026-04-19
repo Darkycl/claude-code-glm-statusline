@@ -1,9 +1,9 @@
 {
   "name": "claude-code-glm-statusline",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Claude Code statusline for GLM Coding Plan subscribers — shows model, context usage, and API quota in real-time",
   "bin": {
-    "glm-statusline-install": "./bin/install.js"
+    "glm-statusline": "bin/install.js"
   },
   "files": [
     "bin/",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Darkycl/claude-code-glm-statusline.git"
+    "url": "git+https://github.com/Darkycl/claude-code-glm-statusline.git"
   },
   "homepage": "https://github.com/Darkycl/claude-code-glm-statusline#readme"
 }

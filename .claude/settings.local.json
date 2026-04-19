@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r \"CLAUDE.md\" /c/Users/darky/ -maxdepth 3)",
+      "Bash(npm pack *)",
+      "Bash(gh auth *)",
+      "Bash(gh repo *)",
+      "Bash(npm whoami *)",
+      "Bash(npm publish *)",
+      "Bash(npm pkg *)",
+      "Bash(xxd \"D:/0.Workspace/ClaudeCode/statusline/bin/install.js\")"
+    ]
+  }
+}
