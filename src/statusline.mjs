@@ -221,12 +221,19 @@ if (fivePct === 0 && sevenPct === 0) {
   }
 
   if (cache?.limits) {
-    const limits = cache.limits;
-    // limits[1] = 5-hour Token, limits[2] = weekly Token
-    fivePct = Math.round(limits[1]?.percentage ?? 0);
-    sevenPct = Math.round(limits[2]?.percentage ?? 0);
-    fiveReset = limits[1]?.nextResetTime ?? null;
-    weeklyReset = limits[2]?.nextResetTime ?? null;
+    // Match by type + unit code (3=hours, 6=weeks) — plan-agnostic
+    const tokenLimits = cache.limits.filter(l => l.type === "TOKENS_LIMIT");
+    const fiveHour = tokenLimits.find(l => l.unit === 3) || tokenLimits[0] || null;
+    const weekly = tokenLimits.find(l => l.unit === 6) || tokenLimits[1] || null;
+
+    if (fiveHour) {
+      fivePct = Math.round(fiveHour.percentage ?? 0);
+      fiveReset = fiveHour.nextResetTime ?? null;
+    }
+    if (weekly) {
+      sevenPct = Math.round(weekly.percentage ?? 0);
+      weeklyReset = weekly.nextResetTime ?? null;
+    }
   }
 }
 
