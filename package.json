@@ -1,7 +1,7 @@
 {
   "name": "claude-code-glm-statusline",
-  "version": "1.0.3",
-  "description": "Claude Code statusline for GLM Coding Plan subscribers — shows model, context usage, and API quota in real-time",
+  "version": "1.1.0",
+  "description": "Claude Code statusline for GLM Coding Plan subscribers — shows model, context usage, API quota, RAM usage, and token statistics in real-time",
   "bin": {
     "glm-statusline": "bin/install.js"
   },
