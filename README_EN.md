@@ -8,8 +8,6 @@ Displays model info, context usage, and 5-hour / 7-day API quotas in real-time �
 
 ## Preview
 
-![preview](screenshots/preview.png)
-
 ```
 📁 statusline | 🧠 glm-5.1 | 📋42% ██████░░░░ | ⏳5h 62% 2h30m | 📅7d 45% 5d12h | 🕐13:16
 ```
